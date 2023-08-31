@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of CAPTCHA</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="container mt-5 custom-bg rounded shadow p-4">
+        <h1 class="head1">Types of CAPTCHA</h1>
+        <p>CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apart)." It's a security
+            technique used on websites and online services to distinguish between human users and automated bots.
+            CAPTCHAs present challenges that are relatively easy for humans to solve but difficult for computers to
+            decipher, ensuring that the user is indeed a human. These challenges can include distorted text, image
+            recognition, puzzle solving, and more. The purpose of CAPTCHA is to prevent bots from performing malicious
+            activities like spamming or automated attacks on websites.</p>
+
+        <h2 class="head2">Checkbox CAPTCHA</h2>
+        <h4 class="text-secondary">Advantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>Checkbox CAPTCHAs are easy to understand and complete for most users. They only require a single click
+                on the checkbox, making them a quick and simple interaction.</li>
+            <li>They have minimal impact on user experience and do not require users to decipher distorted text, solve
+                puzzles, or perform complex tasks.</li>
+            <li>It can effectively deter basic automated scripts and bots that don't have advanced capabilities to
+                simulate human-like behaviors.</li>
+        </ul>
+        <h4 class="text-secondary">Disadvantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>It usually rely on JavaScript. If a user has JavaScript disabled or is using a browser or device that
+                doesn't support it, they might encounter difficulties.</li>
+            <li>Checkbox CAPTCHAs are often provided by third-party services that might collect user data for various
+                purposes. This can raise privacy concerns for some users.</li>
+            <li>As bots become more sophisticated, checkbox CAPTCHAs can become less effective in preventing automated
+                attacks.</li>
+        </ul>
+
+        <h2 class="head2">Text based CAPTCHA</h2>
+        <h4 class="text-secondary">Advantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>Offers a higher level of security compared to checkbox CAPTCHAs.</li>
+            <li>Doesn't rely on third-party services, reducing potential privacy concerns.</li>
+            <li>Provides an additional layer of security for sensitive actions or user data.</li>
+        </ul>
+        <h4 class="text-secondary">Disadvantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>May be challenging for users with visual impairments to decipher distorted text.</li>
+            <li>Not user-friendly for individuals with impairments or language barriers.</li>
+            <li>Can lead to frustration for users due to difficulty in reading distorted characters.</li>
+        </ul>
+
+        <h2 class="head2">Image based CAPTCHA</h2>
+        <h4 class="text-secondary">Advantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>Stronger security against automated bots and scripts, especially when the images are complex.</li>
+            <li>Can be customized to create a visually engaging and branded CAPTCHA.</li>
+            <li>Can be effective in thwarting automated attacks by requiring human-like image recognition skills.</li>
+        </ul>
+        <h4 class="text-secondary">Disadvantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>May be challenging for users with visual impairments or color blindness to interpret images.</li>
+            <li>Can be time-consuming and frustrating for users to solve, leading to potential drop-offs.</li>
+            <li>Could have accessibility issues for users with cognitive disabilities or language barriers.</li>
+        </ul>
+
+
+        <h2 class="head2">Audio based CAPTCHA</h2>
+        <h4 class="text-secondary">Advantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>Accessibility: Provides an alternative for users with visual impairments or difficulties in solving
+                visual CAPTCHAs.</li>
+            <li>Can be effective in deterring automated attacks by requiring human-like audio recognition skills.</li>
+            <li>Can be combined with other CAPTCHA types for added security.</li>
+        </ul>
+        <h4 class="text-secondary">Disadvantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>May be challenging for users with hearing impairments or those in noisy environments to understand the
+                audio.</li>
+            <li>Some users may not have audio playback capabilities, or they may be in a situation where audio is not
+                feasible.</li>
+            <li>Transcription errors can occur, leading to user frustration and potential drop-offs.</li>
+        </ul>
+
+
+        <h2 class="head2">Slider CAPTCHA</h2>
+        <h4 class="text-secondary">Advantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>Slider-based CAPTCHAs are often considered more user-friendly compared to text-based or image-based
+                CAPTCHAs. Users are typically required to perform a simple action like sliding a puzzle piece.</li>
+            <li>They are well-suited for mobile devices and touchscreens as the sliding action is intuitive.</li>
+            <li>Provides an extra layer of security for sensitive actions or user data.</li>
+        </ul>
+        <h4 class="text-secondary">Disadvantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>Slider CAPTCHAs may not provide as high a level of security as more complex CAPTCHAs. They can be
+                bypassed by more sophisticated bots capable of simulating human-like actions.</li>
+            <li>Users with certain disabilities or those using screen readers may face challenges with slider CAPTCHAs.
+            </li>
+            <li>As bots become more sophisticated, slider CAPTCHAs can become less effective in preventing automated
+                attacks.</li>
+        </ul>
+
+        <h2 class="head2">Logic-based CAPTCHA</h2>
+        <h4 class="text-secondary">Advantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>It require users to engage in higher-level cognitive processes, such as solving puzzles or riddles. This
+                complexity makes it more difficult for automated bots to solve them, as these tasks often require
+                human-like reasoning.</li>
+            <li>Logic-based CAPTCHAs exploit human qualities that are difficult for bots to mimic, such as understanding
+                humor or context in riddles.</li>
+            <li>Designing custom logic-based puzzles or riddles can make it more challenging for attackers to develop
+                automated solutions tailored to your specific CAPTCHA.</li>
+        </ul>
+        <h4 class="text-secondary">Disadvantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>It can be time-consuming to solve, especially if the puzzle or riddle is complex. This can frustrate
+                users and lead to a higher likelihood of abandonment or bounce rates.</li>
+            <li>Crafting effective logic-based CAPTCHAs that are both secure and engaging can be a challenge. Poorly
+                designed puzzles might either be too easy for automated scripts to solve or too difficult for genuine
+                users to complete.</li>
+            <li>Users might share solutions to logic-based CAPTCHAs, reducing their effectiveness over time.</li>
+        </ul>
+
+        <h2 class="head2">Behavior based CAPTCHA</h2>
+        <h4 class="text-secondary">Advantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>It can provide a high level of security by analyzing user behavior patterns that are difficult for
+                automated bots to replicate accurately.</li>
+            <li>It can adapt to the user's behavior over time, reducing the likelihood of false positives for genuine
+                users.</li>
+            <li>Depending on the implementation, behavior-based CAPTCHAs might have a lower impact on users with
+                disabilities compared to visual or audio challenges.</li>
+        </ul>
+        <h4 class="text-secondary">Disadvantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>Collecting and analyzing user behavior can raise privacy concerns if not handled properly. Users might
+                be hesitant to share their behavior data.</li>
+            <li>Some users might need time to adapt to the behavior-based CAPTCHA concept, potentially causing confusion
+                or frustration initially.</li>
+            <li>As bots adapt and become more sophisticated, behavior-based CAPTCHAs could become less effective,
+                requiring constant updates and adjustments.</li>
+        </ul>
+
+        <h2 class="head2">Gamified CAPTCHA</h2>
+        <h4 class="text-secondary">Advantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>It provide an engaging and interactive experience for users, making the process more enjoyable.</li>
+            <li>Gamified CAPTCHAs are often easier and more enjoyable for users to complete compared to traditional
+                CAPTCHAs.</li>
+            <li>It's offer a unique and memorable interaction, distinguishing the website from others.</li>
+        </ul>
+        <h4 class="text-secondary">Disadvantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>Creating effective gamified CAPTCHAs requires careful design and development to ensure they effectively
+                differentiate between human users and bots.</li>
+            <li>Gamified CAPTCHAs might collect user interaction data for gaming purposes, raising potential privacy
+                concerns.</li>
+            <li>Developing and maintaining gamified CAPTCHAs might require more resources compared to traditional
+                CAPTCHAs.</li>
+        </ul>
+
+        <h2 class="head2">Math CAPTCHA</h2>
+        <h4 class="text-secondary">Advantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>Math-based CAPTCHAs are easy to understand and solve for most users, as they involve basic arithmetic
+                operations.</li>
+            <li>Math-based CAPTCHAs have a relatively low impact on user experience, as they are straightforward and
+                quick to solve.</li>
+            <li>They can effectively deter basic automated scripts and bots that don't have advanced capabilities to
+                solve mathematical problems.</li>
+        </ul>
+        <h4 class="text-secondary">Disadvantages:-</h4>
+        <ul style="list-style-type: disc;">
+            <li>It may not provide as high a level of security as more complex CAPTCHAs. They can be bypassed by more
+                sophisticated bots.</li>
+            <li>Some users might perceive math-based CAPTCHAs as overly simplistic or lacking in security.</li>
+            <li>As bots become more advanced and capable of solving mathematical problems, the security effectiveness of
+                math-based CAPTCHAs decreases.</li>
+        </ul>
+    </div>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

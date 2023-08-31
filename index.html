@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="box">
+        <form action="captcha_types.html" onsubmit="return validateCaptcha()">
+            <h2>Login in</h2>
+            <div class="inputBox">
+                <input type="text" required>
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required>
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="center">
+                <div id="captchaBackground">
+                    <canvas id="captcha">captcha text</canvas>
+                    <div class="capo">Enter your captcha here</div>
+                    <input id="textBox" type="text" name="text">
+                    <div id="buttons">
+                        <input id="submitButton" type="submit">
+                        <button id="refreshButton" type="submit">Refresh</button>
+                    </div>
+                    <span id="output"></span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+    <script>
+        function validateCaptcha() {
+            var userText = document.getElementById('textBox').value;
+
+            // captcha validation logic here
+            if (userText === c) {
+                // alert('Correct captcha');
+                return true;
+            } else {
+                // alert('Incorrect captcha. Please try again.');
+                return false;
+            }
+        }
+        function refreshCaptcha() {
+            refreshButton.addEventListener('click', function () {
+                userText.value = "";
+                let refreshArr = [];
+                for (let j = 1; j <= 7; j++) {
+                    refreshArr.push(alphaNums[Math.floor(Math.random() * alphaNums.length)]);
+                }
+                ctx.clearRect(0, 0, captchaText.width, captchaText.height);
+                c = refreshArr.join('');
+                ctx.fillText(refreshArr.join(''), captchaText.width / 4, captchaText.height / 2);
+                output.innerHTML = "";
+            });
+        }
+    </script>
+</body>
+
+</html>

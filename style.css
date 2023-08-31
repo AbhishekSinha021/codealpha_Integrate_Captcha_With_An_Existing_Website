@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /*whole bg*/
+}
+.box {
+  position: relative;
+  width: 380px;
+  height: 510px;
+  background: #393a3a; /*running line box area*/
+  border-radius: 10px 50px;
+  overflow: hidden;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 370px;
+  height: 450px;
+  background: linear-gradient(60deg, transparent, #d9138a, #d9138a);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+.box::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 370px;
+  height: 450px;
+  background: linear-gradient(60deg, transparent, #45f3ff, #45f3ff);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate      /*rotation animation*/ {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+form {
+  position: absolute;
+  inset: 2px;
+  background-image: url(./image/hi.png);
+  border-radius: 20px 50px;
+  /* login page color*/
+  z-index: 10;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  color: #45f3ff;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+.inputBox {
+  position: relative;
+  width: 320px;
+  margin-top: 15px;
+}
+
+.inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 1px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #01014a; /*username and password text*/
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  z-index: 10;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 1px;
+  font-size: lem;
+  color: #919191;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: #45f3ff; /*after clicking  usr and pass their color */
+  transform: translatex(-10px) translateY(-30px);
+  font-size: 0.75em;
+}
+
+.inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #45f3ff; /*underline color*/
+  border-radius: 11px;
+  transition: 0.6s;
+  pointer-events: none;
+  z-index: 9;
+}
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i {
+  height: 30px;
+}
