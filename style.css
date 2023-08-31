@@ -57,7 +57,6 @@ form {
   inset: 2px;
   background-image: url(./image/hi.png);
   border-radius: 20px 50px;
-  /* login page color*/
   z-index: 10;
   padding: 30px 30px;
   display: flex;
@@ -101,7 +100,7 @@ h2 {
 
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span {
-  color: #45f3ff; /*after clicking  usr and pass their color */
+  color: #45f3ff; 
   transform: translatex(-10px) translateY(-30px);
   font-size: 0.75em;
 }
@@ -112,7 +111,7 @@ h2 {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: #45f3ff; /*underline color*/
+  background: #45f3ff; 
   border-radius: 11px;
   transition: 0.6s;
   pointer-events: none;
